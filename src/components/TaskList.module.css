@@ -1,7 +1,7 @@
 .taskListBox {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
+  justify-content: space-between;
 
   height: 72px;
   margin-bottom: 12px;
@@ -12,9 +12,16 @@
   border-radius: var(--br);
 }
 
+.box {
+  display: flex;
+  align-items: flex-start;
+}
+
 .taskListBox p {
+  max-width: 632px;
   font-size: 0.9rem;
   line-height: 20px;
+  margin-left: 12px;
 }
 
 .taskListBox button {
@@ -30,5 +37,4 @@
 
 .taskListBox button:hover {
   color: var(--danger);
-  border-radius: 4px;
 }
