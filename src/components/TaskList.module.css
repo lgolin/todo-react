@@ -1,0 +1,34 @@
+.taskListBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  height: 72px;
+  margin-bottom: 12px;
+  padding: 1rem;
+
+  background-color: var(--grey-500);
+  border: 1px solid var(--grey-400);
+  border-radius: var(--br);
+}
+
+.taskListBox p {
+  font-size: 0.9rem;
+  line-height: 20px;
+}
+
+.taskListBox button {
+  cursor: pointer;
+  color: var(--grey-300);
+  background: transparent;
+  border: 0;
+  line-height: 0;
+
+  border-radius: 2px;
+  transition: 0.2s;
+}
+
+.taskListBox button:hover {
+  color: var(--danger);
+  border-radius: 4px;
+}
