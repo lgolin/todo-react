@@ -1,0 +1,26 @@
+section {
+  width: 900px;
+  margin: 0 auto;
+
+  position: absolute;
+  top: 180px;
+  left: 220px;
+}
+
+input {
+  width: 100%;
+  background: var(--grey-500);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: none;
+}
+
+input::placeholder {
+  color: var(--grey-300);
+  font-size: var(--font-18);
+}
+
+input:focus {
+  outline: none;
+  border: 3px solid var(--purple-500);
+}
