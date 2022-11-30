@@ -41,6 +41,7 @@ input,
 textarea,
 button {
   color: var(--grey-100);
+  border: none;
 }
 
 .container {
