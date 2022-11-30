@@ -1,18 +1,17 @@
-section {
-  width: 900px;
-  margin: 0 auto;
-
-  position: absolute;
-  top: 180px;
-  left: 220px;
-}
-
 input {
-  width: 100%;
-  background: var(--grey-500);
-  padding: 1.5rem;
-  border-radius: 8px;
   border: none;
+  display: block;
+  width: 100%;
+
+  padding: 1.2rem;
+
+  border-radius: 0.4rem;
+  background: var(--grey-500);
+
+  transition: 0.2s;
+
+  position: relative;
+  margin-top: -2rem;
 }
 
 input::placeholder {
@@ -20,7 +19,9 @@ input::placeholder {
   font-size: var(--font-18);
 }
 
-input:focus {
+input:focus,
+input:hover {
   outline: none;
-  border: 3px solid var(--purple-500);
+  border-color: var(--purple-500);
+  box-shadow: 0 0 0 2px var(--purple-500);
 }
