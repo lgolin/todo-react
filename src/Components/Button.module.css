@@ -1,5 +1,5 @@
 button {
-  padding: 1.2rem 2rem;
+  padding: 1.2rem 1.5rem;
 
   border-radius: 0.4rem;
   background: var(--blue-800);
@@ -8,6 +8,19 @@ button {
   margin-top: -2rem;
 
   font-size: var(--font-18);
+  letter-spacing: 0.5px;
+
+  display: flex;
+  gap: 0.3rem;
+}
+
+button::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: url('../assets//plus.png') no-repeat center center;
+  position: relative;
+  bottom: -1px;
 }
 
 button:focus,
@@ -15,4 +28,5 @@ button:hover {
   outline: none;
   border-color: var(--blue-500);
   box-shadow: 0 0 0 2px var(--blue-500);
+  opacity: 0.8;
 }
